@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover > .submenu {
+    display: block;
+}
+
+nav ul li:hover a {
+    background-color: #555;
+}
+
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    width: 140px;
+    top: 100%;
+    left: 0;
+}
+
+nav ul .submenu li {
+    display: block;
+}
+
+nav ul .submenu li a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul .submenu li:hover a {
+    background-color: #777;
+}
+header {
+            background-image: url(./anhngangmaytinh.jfif);
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            padding: 90px;
+        }
+        *body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('your_background_image.jpg'); /* Thay 'your_background_image.jpg' bằng đường dẫn đến hình nền của bạn */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .register-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Màu nền với độ trong suốt */
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .register-form label {
+            margin-bottom: 8px;
+        }
+
+        .register-form input {
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .register-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        @keyframes runText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .running-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: runText 20s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="running-text">
+        <h1>SHOP LAPTOP VÀ PC GAMMING</h1>
+    </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Sản phẩm</a>
+                <ul class="submenu">
+                    <li><a href="trang con 2.html">Laptop</a></li>
+                    <li><a href="trang con3.html">Máy tính để bàn</a></li>
+                    <li><a href="trangcon1s.html">Phụ kiện</a></li>
+                </ul>
+            <li><a href="đăngnhập.html">đăng nhập</a></li>
+            <li><a href="đăng kí.html">đăng kí</a></li>
+             <li><a href="liên hệ.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <div class="register-container">
+        <h2>Đăng Ký</h2>
+        <p>Chưa có tài khoản? Đăng ký ngay!</p>
+
+        <form class="register-form">
+            <label for="fullname">Họ và Tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="newUsername">Tên Đăng Nhập:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <label for="newPassword">Mật Khẩu:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <button type="submit">Đăng Ký</button>
+        </form>
+    </div>
+</body>
+</html>
